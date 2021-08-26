@@ -32,3 +32,9 @@ cordova plugin add twttr
 
 ## How to use it?
 [TODO]
+
+### `Twttr.Widget.load`
+
+See [twitter official
+documentation](https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/scripting-loading-and-initialization)
+for more details.
