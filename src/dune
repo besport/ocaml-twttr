@@ -1,0 +1,12 @@
+(rule
+ (targets twttr.ml)
+ (deps twttr.mli)
+ (action (run %{bin:gen_js_api} %{deps})))
+
+(library
+ (public_name twttr)
+ (name twttr)
+ (modes byte)
+ (libraries gen_js_api js_of_ocaml js_of_ocaml-ppx)
+ (preprocess (pps js_of_ocaml-ppx))
+)

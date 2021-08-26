@@ -1,0 +1,18 @@
+opam-version: "2.0"
+version: "1.0"
+maintainer: "Thibaut Gudin <tgudin@besport.com>"
+authors: "Thibaut Gudin <tgudin@besport.com>"
+homepage: "git+https://github.com/besport/ocaml-twttr"
+bug-reports: "git+https://github.com/besport/ocaml-twttr/issues"
+dev-repo: "git+https://github.com/besport/ocaml-twttr"
+license: "LGPL-2.1 with OCaml linking exception"
+description: "Binding to the 'twttr' plugin using gen_js_api"
+synopsis: "Binding to the 'twttr' plugin using gen_js_api"
+build: [[ "dune" "build" "-j" jobs "-p" name "@install" ]]
+depends: [
+  "ocaml" { >= "4.08.0" }
+  "dune" {>= "2.8"}
+  "gen_js_api"
+  "js_of_ocaml"
+  "js_of_ocaml-ppx"
+]
