@@ -20,12 +20,6 @@ let conversion_available () =
 
 [@@@js.implem let html_element_to_js = Obj.magic]
 
-type t
-
-type x
-
-val get_twttr : unit -> t [@@js.get "window.twttr"]
-
 [@@@js.stop]
 
 val init : (unit -> unit) -> unit
